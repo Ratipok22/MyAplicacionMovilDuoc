@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>FrunaMovil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body" [fullscreen]="true">
+  <br>
+  <ion-button id="botonCerrar" [routerLink]="['/login']" (click)="cerrar();">Cerrar</ion-button>
+
+  <ion-card-content id="ionhome">
+    <!-- Input para el monto, visible solo si mostrarInputMonto es true -->
+      <ion-label position="stacked">Ingrese Monto:</ion-label>
+      <ion-input type="number" [(ngModel)]="monto" placeholder="Ingrese monto"></ion-input>
+      <ion-button id="botonConfirmar" expand="block" (click)="actualizarPrecio()">Confirmar</ion-button>
+
+  
+    <h2>Ingresar la Direccion</h2>
+    <ion-input [(ngModel)]="direccion" placeholder="Ejemplo: Avenida sausalito 4141 viña de lmar"></ion-input>
+    <ion-button id="botonViaje" (click)="crearViaje()">Crear Viaje</ion-button>
+  </ion-card-content>
+  
+  <h2>Lista de Viajes</h2>
+
+  <ion-item id="listaViajes" *ngFor="let viaje of viajes">
+    <ion-label>
+      <h3>ID: {{ viaje.id }}</h3>
+      <p>Destino: {{ viaje.destino }}</p>
+      <p>Fecha: {{ viaje.fecha }}</p>
+      <p>Estado: {{ viaje.viaje_tomado }}</p>
+      <p>Precio del viaje: {{ viaje.usuario.precio }}</p>
+    </ion-label>
+    <ion-input [(ngModel)]="viaje.destino" placeholder="Modificar dirección"></ion-input>
+    <ion-button (click)="modificarViaje(viaje.id, viaje.destino)">Modificar</ion-button>
+    <ion-button (click)="eliminarViaje(viaje.id)" color="danger">
+        Eliminar
+    </ion-button>
+  </ion-item>
+
+
+</ion-content>

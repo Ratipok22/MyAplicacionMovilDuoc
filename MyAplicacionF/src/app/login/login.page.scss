@@ -1,0 +1,83 @@
+.login-content {
+  --background: linear-gradient(to bottom, #15131e, #15131e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+  padding: 0; /* Elimina paddings que podrían interferir */
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column; /* Permite apilar los elementos verticalmente */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 100%; /* Evita que el contenedor crezca demasiado */
+  padding: 20px; /* Agrega espaciado interno */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+.ionCard {
+  width: 90%; /* Adaptable a cualquier pantalla */
+  max-width: 400px; /* Limita el ancho en pantallas grandes */
+  min-width: 280px; /* Evita que se reduzca demasiado */
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  background: linear-gradient(to bottom right, #721485, rgb(249, 72, 255));
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Añade un efecto visual */
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem; /* Escalable */
+  text-align: center;
+  font-weight: bold;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem; /* Tamaño escalable */
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.ionItem {
+  margin-bottom: 15px;
+  border-radius: 15px;
+  width: 100%; /* Ocupa el ancho del contenedor */
+  box-sizing: border-box; /* Evita problemas con el padding */
+}
+
+.ionBu {
+  --background: #15131e;
+  width: 100%;
+  padding: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease; /* Efecto de suavizado al hacer hover */
+}
+
+.ionBu:hover {
+  --background: #333333; /* Cambio de color en hover */
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: rgb(200, 200, 255); /* Cambia el color al pasar el cursor */
+}

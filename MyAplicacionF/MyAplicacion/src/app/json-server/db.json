@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "Sincere@duocuc.cl",
+      "precio": 200
+    },
+    {
+      "id": "2",
+      "email": "fruna@duocuc.cl",
+      "precio": 66
+    }
+  ],
+  "conductor": [
+    {
+      "idcon": "1",
+      "email": "conduct@conductorduoc.cl",
+      "id": "f3fc"
+    },
+    {
+      "idcon": "2",
+      "email": "yosoy@conductorduoc.cl",
+      "id": "e603"
+    }
+  ],
+  "viajes": [
+    {
+      "id": "9487",
+      "destino": "",
+      "fecha": "2024-10-21T01:59:50.876Z",
+      "usuario": {
+        "id": "2",
+        "email": "fruna@duocuc.cl",
+        "precio": 66
+      },
+      "viaje_tomado": "tomado"
+    },
+    {
+      "id": "5d42",
+      "destino": "av francia, valparaiso",
+      "fecha": "2024-10-21T02:03:43.000Z",
+      "usuario": {
+        "id": "1",
+        "email": "Sincere@duocuc.cl",
+        "precio": 200
+      },
+      "viaje_tomado": "no tomado"
+    }
+  ],
+  "send-sms": []
+}

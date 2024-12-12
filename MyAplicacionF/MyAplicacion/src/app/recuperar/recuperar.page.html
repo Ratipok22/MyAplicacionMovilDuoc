@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button id="goback" (click)="goBack()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>FrunaMovil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="rec-content">
+  <br>
+
+  <div class="login-container">
+    <ion-card class="ionCard" #recuperarCard> 
+      <ion-card-content>
+        <h2 class="login-title">Recuperar Contraseña</h2>
+        <ion-item class="ionItem">
+          <ion-input id="recup"
+            type="email"
+            label="Email"
+            labelPlacement="floating"
+            ngModel
+            email
+            [(ngModel)]="usuario">
+          </ion-input>
+        </ion-item>
+        <ion-button id="recuperacion" class="ionBu" expand="full" (click)="recuperar()">Recuperar</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
